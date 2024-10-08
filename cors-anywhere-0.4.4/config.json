@@ -1,4 +1,0 @@
-{
-  "corsWhitelist": ["https://arjs-cors-proxy.herokuapp.com/"],
-  "corsPreflightHeaders": []
-}
