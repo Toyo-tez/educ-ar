@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <script src="AR.js/1.3.0/aframe.min.js"></script>
+  <script src="AR.js/aframe/build/aframe-ar.js"></script>
+  <body style="margin: 0px; overflow: hidden;">
+    <a-scene id="arScene" embedded arjs>
+      <a-marker preset="hiro">
+        <a-entity
+          id="modelEntity"
+          position="0 0 0"
+          scale="1 1 1"
+          gltf-model="http://192.168.43.1/arjs/human_brain/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+
+    <script>
+      const arScene = document.getElementById('arScene');
+      arScene.style.display = 'block';  // Show AR scene immediately on phones
+    </script>
+  </body>
+</html>
