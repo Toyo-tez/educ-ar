@@ -1,117 +1,477 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visor de Modelos en AR</title>
-  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-  <script src="https://ar-js-org.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      overflow: hidden;
-    }
-    #uploadSection {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      z-index: 1;
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      max-width: 300px;
-    }
-    #uploadSection h2 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-    #uploadSection label {
-      font-size: 14px;
-    }
-    #uploadSection input, button {
-      display: block;
-      margin: 10px 0;
-      padding: 8px;
-      width: 100%;
-      font-size: 14px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-sizing: border-box;
-    }
-    #uploadButton {
-      background-color: #28a745;
-      color: white;
-      border: none;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    #uploadButton:hover {
-      background-color: #218838;
-    }
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Escuela de Innovación</title>
 
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
-  </style>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
-<body>
 
-  <!-- Sección de carga para la interacción del usuario -->
-  <div id="uploadSection">
-    <h2>Carga tu Modelo 3D</h2>
-    <label for="fileInput">Elige un modelo GLTF/GLB:</label>
-    <input type="file" id="fileInput" accept=".gltf,.glb"/>
-    
-    <label for="scaleInput">Establecer escala del modelo (ej. 3.0):</label>
-    <input type="number" id="scaleInput" placeholder="Escala (ej. 3.0)" step="0.1" value="1"/>
-    
-    <button id="uploadButton">Cargar Modelo</button>
+<body id="inicio">
+    <!-- Header-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">Innova3D</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#modelos3d">MODELOS 3D</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#proyecto">PROYECTO</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#nosotros">NOSOTROS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <p>Después de cargar, apunta tu cámara hacia el marcador 'hiro' para ver tu modelo en AR.</p>
-  </div>
+    <!-- Esta parte es la muestra de lo del link de sketchfab -->
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-4">Historia Egipcia: Nefertiti</h1>
+            <!-- Masthead Avatar Image-->
+            <style>
+                .tamaño {
+                    aspect-ratio: 1 / 1;
+                    width: 100%;
+                    max-height: 600px;
+                }
+            </style>
+            <div class="sketchfab-embed-wrapper tamaño">
+                <iframe class="if" title="Bust of Nefertiti photogrammetry" frameborder="0" allowfullscreen
+                    mozallowfullscreen="true" webkitallowfullscreen="true"
+                    allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                    execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="100%"
+                    src="https://sketchfab.com/models/1a4b5c3a2a9f48e7b700e29a4b4e7190/embed"></iframe>
+            </div>
 
-  <!-- Configuración de la escena AR -->
-  <a-scene id="arScene" embedded arjs style="display: none;">
-    <a-marker preset="hiro">
-      <a-entity id="modelEntity" position="0 0 0" scale="1 1 1"></a-entity>
-    </a-marker>
-    <a-entity camera></a-entity>
-  </a-scene>
 
-  <script>
-    // Obtener referencias a los elementos HTML
-    const uploadButton = document.getElementById('uploadButton');
-    const fileInput = document.getElementById('fileInput');
-    const modelEntity = document.getElementById('modelEntity');
-    const arScene = document.getElementById('arScene');
-    const scaleInput = document.getElementById('scaleInput');
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">Profesor Carlos Pérez</p>
+        </div>
+    </header>
 
-    // Agregar un listener para el botón de carga
-    uploadButton.addEventListener('click', () => {
-      const file = fileInput.files[0]; // Obtener el archivo seleccionado
-      if (file) {
-        // Verificar si es un archivo de modelo válido
-        if (!file.name.endsWith('.gltf') && !file.name.endsWith('.glb')) {
-          alert('Por favor, carga un archivo GLTF o GLB válido.');
-          return;
-        }
 
-        // Crear una URL para el modelo cargado
-        const blobUrl = URL.createObjectURL(file);
-        modelEntity.setAttribute('gltf-model', blobUrl);
+    <!-- materias Section-->
+    <section class="page-section materias" id="modelos3d">
+        <div class="container">
+            <!-- materias Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">MATERIAS</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- materias Grid Items-->
+            <div class="row justify-content-center">
+                <!-- materias Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="materias-item mx-auto" data-bs-toggle="modal" data-bs-target="#materiasModal1">
+                        <div class="materias-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="materias-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/materias/quimica.png" alt="..." />
+                    </div>
+                </div>
+                <!-- materias Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="materias-item mx-auto" data-bs-toggle="modal" data-bs-target="#materiasModal2">
+                        <div class="materias-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="materias-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/materias/cake.png" alt="..." />
+                    </div>
+                </div>
+                <!-- materias Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="materias-item mx-auto" data-bs-toggle="modal" data-bs-target="#materiasModal3">
+                        <div class="materias-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="materias-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/materias/circus.png" alt="..." />
+                    </div>
+                </div>
+                <!-- materias Item 4-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="materias-item mx-auto" data-bs-toggle="modal" data-bs-target="#materiasModal4">
+                        <div class="materias-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="materias-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/materias/game.png" alt="..." />
+                    </div>
+                </div>
+                <!-- materias Item 5-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                    <div class="materias-item mx-auto" data-bs-toggle="modal" data-bs-target="#materiasModal5">
+                        <div class="materias-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="materias-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/materias/safe.png" alt="..." />
+                    </div>
+                </div>
+                <!-- materias Item 6-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="materias-item mx-auto" data-bs-toggle="modal" data-bs-target="#materiasModal6">
+                        <div class="materias-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="materias-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/materias/submarine.png" alt="..." />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section-->
+    <section class="page-section bg-primary text-white mb-0" id="proyecto">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">PROYECTO</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ms-auto">
+                    <p class="lead">Buscamos acercar nuevas formas de enseñanza, facilitando el
+                        aprendizaje, promoviendo la motivación</p>
+                </div>
+                <div class="col-lg-4 me-auto">
+                    <p class="lead">y la inserción a una sociedad 4.0 siempre haciendo foco en el uso
+                        responsable de la tecnología.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        // Obtener la escala del input y aplicarla al modelo
-        const scaleValue = parseFloat(scaleInput.value) || 1; // La escala predeterminada es 1
-        modelEntity.setAttribute('scale', `${scaleValue} ${scaleValue} ${scaleValue}`);
-
-        // Mostrar la escena AR una vez que se carga el modelo
-        arScene.style.display = 'block';
-      } else {
-        alert('Por favor, selecciona primero un archivo GLTF o GLB.');
-      }
-    });
-  </script>
-
+    <!-- Contact Section-->
+    <section class="page-section" id="nosotros">
+        <div class="container">
+            <!-- Contact Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">¿Quienes somos?</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Contact Section Form-->
+            <div class="row justify-content-center">
+                <p class="lead text-center">Alumnos de la escuela secundaria de Innovación de la provincia de Misiones,
+                    entusiastas
+                    de la tecnología y con grandes ideas para fomentar el uso responsable de los dispositivos
+                    inteligentes.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Ubicación de la Institución</h4>
+                    <p class="lead mb-0">
+                        Av. Costanera, Posadas, Misiones
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Nuestras Redes</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/secundariainnova"
+                        target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://x.com/secinnovacion"
+                        target="_blank"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1"
+                        href="https://www.instagram.com/secundariadeinnovacion/?hl=es" target="_blank"><i
+                            class="fab fa-fw fa-instagram"></i></a>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">Mas información</h4>
+                    <p class="lead mb-0">
+                        Para conocer más accedé a
+                        <a href="https://esim.edu.ar/web/la-escuela/" target="_blank">Escuela de Innovación</a>
+                        .
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; Silicon Misiones 2024</small></div>
+    </div>
+    <!-- materias Modals-->
+    <!-- materias Modal 1-->
+    <div class="materias-modal modal fade" id="materiasModal1" tabindex="-1" aria-labelledby="materiasModal1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- materias Modal - Title-->
+                                <h2 class="materias-modal-title text-secondary text-uppercase mb-0">QUÍMICA</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- materias Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/materias/quimica.png" alt="..." />
+                                <!-- materias Modal - Text-->
+                                <p class="mb-4">Aquí encontrarás modelos 3D para potenciar el aprendizaje de los
+                                    elementos de la tabla periódica.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-arrow-left fa-fw"></i>
+                                    Volver
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- materias Modal 2-->
+    <div class="materias-modal modal fade" id="materiasModal2" tabindex="-1" aria-labelledby="materiasModal2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- materias Modal - Title-->
+                                <h2 class="materias-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- materias Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/materias/cake.png" alt="..." />
+                                <!-- materias Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- materias Modal 3-->
+    <div class="materias-modal modal fade" id="materiasModal3" tabindex="-1" aria-labelledby="materiasModal3"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- materias Modal - Title-->
+                                <h2 class="materias-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- materias Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/materias/circus.png" alt="..." />
+                                <!-- materias Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- materias Modal 4-->
+    <div class="materias-modal modal fade" id="materiasModal4" tabindex="-1" aria-labelledby="materiasModal4"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- materias Modal - Title-->
+                                <h2 class="materias-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- materias Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/materias/game.png" alt="..." />
+                                <!-- materias Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- materias Modal 5-->
+    <div class="materias-modal modal fade" id="materiasModal5" tabindex="-1" aria-labelledby="materiasModal5"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- materias Modal - Title-->
+                                <h2 class="materias-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- materias Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/materias/safe.png" alt="..." />
+                                <!-- materias Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- materias Modal 6-->
+    <div class="materias-modal modal fade" id="materiasModal6" tabindex="-1" aria-labelledby="materiasModal6"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- materias Modal - Title-->
+                                <h2 class="materias-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- materias Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/materias/submarine.png" alt="..." />
+                                <!-- materias Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visor de Modelos en AR</title>
+  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  <script src="https://ar-js-org.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+    #uploadSection {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 1;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+    }
+    #uploadSection h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    #uploadSection label {
+      font-size: 14px;
+    }
+    #uploadSection input, button {
+      display: block;
+      margin: 10px 0;
+      padding: 8px;
+      width: 100%;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    #uploadButton {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    #uploadButton:hover {
+      background-color: #218838;
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Sección de carga para la interacción del usuario -->
+  <div id="uploadSection">
+    <h2>Carga tu Modelo 3D</h2>
+    <label for="fileInput">Elige un modelo GLTF/GLB:</label>
+    <input type="file" id="fileInput" accept=".gltf,.glb"/>
+    
+    <label for="scaleInput">Establecer escala del modelo (ej. 3.0):</label>
+    <input type="number" id="scaleInput" placeholder="Escala (ej. 3.0)" step="0.1" value="1"/>
+    
+    <button id="uploadButton">Cargar Modelo</button>
+
+    <p>Después de cargar, apunta tu cámara hacia el marcador 'hiro' para ver tu modelo en AR.</p>
+  </div>
+
+  <!-- Configuración de la escena AR -->
+  <a-scene id="arScene" embedded arjs style="display: none;">
+    <a-marker preset="hiro">
+      <a-entity id="modelEntity" position="0 0 0" scale="1 1 1"></a-entity>
+    </a-marker>
+    <a-entity camera></a-entity>
+  </a-scene>
+
+  <script>
+    // Obtener referencias a los elementos HTML
+    const uploadButton = document.getElementById('uploadButton');
+    const fileInput = document.getElementById('fileInput');
+    const modelEntity = document.getElementById('modelEntity');
+    const arScene = document.getElementById('arScene');
+    const scaleInput = document.getElementById('scaleInput');
+
+    // Agregar un listener para el botón de carga
+    uploadButton.addEventListener('click', () => {
+      const file = fileInput.files[0]; // Obtener el archivo seleccionado
+      if (file) {
+        // Verificar si es un archivo de modelo válido
+        if (!file.name.endsWith('.gltf') && !file.name.endsWith('.glb')) {
+          alert('Por favor, carga un archivo GLTF o GLB válido.');
+          return;
+        }
+
+        // Crear una URL para el modelo cargado
+        const blobUrl = URL.createObjectURL(file);
+        modelEntity.setAttribute('gltf-model', blobUrl);
+
+        // Obtener la escala del input y aplicarla al modelo
+        const scaleValue = parseFloat(scaleInput.value) || 1; // La escala predeterminada es 1
+        modelEntity.setAttribute('scale', `${scaleValue} ${scaleValue} ${scaleValue}`);
+
+        // Mostrar la escena AR una vez que se carga el modelo
+        arScene.style.display = 'block';
+      } else {
+        alert('Por favor, selecciona primero un archivo GLTF o GLB.');
+      }
+    });
+  </script>
+
+</body>
+</html>
