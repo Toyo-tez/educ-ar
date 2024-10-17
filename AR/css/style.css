@@ -4,3 +4,8 @@
     object-fit: cover; /* Esto evita que el video se deforme */
   }
   
+  video {
+    object-fit: cover;
+    width: 100% !important;
+    height: 100% !important;
+  }
