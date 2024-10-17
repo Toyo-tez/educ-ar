@@ -101,13 +101,21 @@
   </a-scene>
 
   <script>
-    document.addEventListener('arjs-video-loaded', (event) => {
-    const canvas = document.querySelector('canvas');
-    if (canvas) {
-      canvas.style.width = '100%';
-      canvas.style.height = '100%';
-    }
-    });
+   document.addEventListener('arjs-video-loaded', (event) => {
+  const video = document.querySelector('video');
+  const canvas = document.querySelector('canvas');
+
+  if (video) {
+    video.style.width = '100%';
+    video.style.height = '100%';
+    video.style.objectFit = 'cover';
+  }
+
+  if (canvas) {
+    canvas.style.width = '100%';
+    canvas.style.height = '100%';
+  }
+});
 
 
     document.documentElement.requestFullscreen();
