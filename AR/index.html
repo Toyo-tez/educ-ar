@@ -101,21 +101,7 @@
   </a-scene>
 
   <script>
-  function adjustVideoAndCanvas() {
-  const video = document.querySelector('video');
-  const canvas = document.querySelector('canvas');
-
-  if (video) {
-    video.style.width = '100%';
-    video.style.height = '100%';
-    video.style.objectFit = 'cover';
-  }
-
-  if (canvas) {
-    canvas.style.width = '100%';
-    canvas.style.height = '100%';
-  }
-}
+  
 
   // Llama a la función cuando la escena AR esté completamente cargada
   document.addEventListener('arjs-video-loaded', adjustVideoAndCanvas);
