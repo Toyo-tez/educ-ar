@@ -101,7 +101,12 @@
   </a-scene>
 
   <script>
-    
+    document.addEventListener('arjs-video-loaded', (event) => {
+  const canvas = document.querySelector('canvas');
+  if (canvas) {
+    canvas.style.height = '100%';
+  }
+});
     document.addEventListener('DOMContentLoaded', () => {
       const uploadButton = document.getElementById('uploadButton');
       const fileInput = document.getElementById('fileInput');
