@@ -1,0 +1,6 @@
+#arScene {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto evita que el video se deforme */
+  }
+  
