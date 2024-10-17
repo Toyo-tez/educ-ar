@@ -84,6 +84,9 @@
     <label for="scaleInput">Establecer escala del modelo (ej. 3.0):</label>
     <input type="number" id="scaleInput" placeholder="Escala (ej. 3.0)" step="0.1" value="1"/>
     
+    <label for="heightInput">Ajustar altura del modelo (ej. 1.5):</label>
+    <input type="number" id="heightInput" placeholder="Altura (ej. 1.5)" step="0.1" value="0"/>
+
     <button id="uploadButton">Cargar Modelo</button>
     <p>Después de cargar, apunta tu cámara hacia el marcador 'hiro' para ver tu modelo en AR.</p>
   </div>
@@ -103,6 +106,7 @@
       const modelEntity = document.getElementById('modelEntity');
       const arScene = document.getElementById('arScene');
       const scaleInput = document.getElementById('scaleInput');
+      const heightInput = document.getElementById('heightInput');
       const uploadSection = document.getElementById('uploadSection');
       const hamburgerButton = document.getElementById('hamburgerButton');
   
@@ -122,9 +126,11 @@
           const blobUrl = URL.createObjectURL(file);
           modelEntity.setAttribute('gltf-model', blobUrl);
   
-          // Obtener la escala del input y aplicarla al modelo
+          // Obtener la escala y altura del input y aplicarlas al modelo
           const scaleValue = parseFloat(scaleInput.value) || 1;
+          const heightValue = parseFloat(heightInput.value) || 0;
           modelEntity.setAttribute('scale', `${scaleValue} ${scaleValue} ${scaleValue}`);
+          modelEntity.setAttribute('position', `0 ${heightValue} 0`);
         } else {
           alert('Por favor, selecciona primero un archivo GLTF o GLB.');
         }
