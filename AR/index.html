@@ -93,7 +93,7 @@
   </div>
 
   <!-- Configuración de la escena AR -->
-  <a-scene embedded arjs="sourceType: webcam; videoWidth: 1280; videoHeight: 720;" style="display: none;">
+  <a-scene id="arScene"embedded arjs="sourceType: webcam; videoWidth: 1280; videoHeight: 720;" style="display: none;">
     <a-marker preset="hiro">
       <a-entity id="modelEntity" position="10 10 -10" scale="1 1 1" gltf-model="url(cerebro.glb)"></a-entity>
     </a-marker>
