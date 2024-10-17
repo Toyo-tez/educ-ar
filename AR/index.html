@@ -8,35 +8,35 @@
   <script src="https://ar-js-org.github.io/AR.js/aframe/build/aframe-ar.js"></script>
   <style>
     body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  overflow: hidden;
-  background-color: #1abc9c; /* Color de fondo para la interfaz */
-}
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+      background-color: #1abc9c;
+    }
 
-#hamburgerButton {
-  background-color: #1abc9c; /* Fondo del botón */
-  padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
+    #hamburgerButton {
+      background-color: #1abc9c;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
 
-#hamburgerButton:hover {
-  background-color: #17a589; /* Color de fondo al pasar el mouse */
-}
+    #hamburgerButton:hover {
+      background-color: #17a589;
+    }
 
-#uploadSection {
-  position: absolute;
-  top: 60px; /* Espacio para el botón */
-  left: 10px;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
-  transition: all 0.3s ease; /* Animación de transición */
-}
+    #uploadSection {
+      position: absolute;
+      top: 60px;
+      left: 10px;
+      z-index: 1;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      transition: all 0.3s ease;
+    }
     #uploadSection h2 {
       font-size: 18px;
       margin-bottom: 10px;
@@ -68,41 +68,36 @@
 </head>
 <body>
 
-  <body>
-    <!-- Botón de hamburguesa -->
-    <div id="hamburgerButton" style="position: absolute; top: 10px; left: 10px; cursor: pointer; z-index: 2;">
-      <div style="width: 30px; height: 3px; background-color: white; margin: 5px 0;"></div>
-      <div style="width: 30px; height: 3px; background-color: white; margin: 5px 0;"></div>
-      <div style="width: 30px; height: 3px; background-color: white; margin: 5px 0;"></div>
-    </div>
-  
-    <!-- Sección de carga para la interacción del usuario -->
-    <div id="uploadSection" style="display: none;"> <!-- Oculta por defecto -->
-      <h2>Carga tu Modelo 3D</h2>
-      <label for="fileInput">Elige un modelo GLTF/GLB:</label>
-      <input type="file" id="fileInput" accept=".gltf,.glb"/>
-      
-      <label for="scaleInput">Establecer escala del modelo (ej. 3.0):</label>
-      <input type="number" id="scaleInput" placeholder="Escala (ej. 3.0)" step="0.1" value="1"/>
-      
-      <button id="uploadButton">Cargar Modelo</button>
-      <p>Después de cargar, apunta tu cámara hacia el marcador 'hiro' para ver tu modelo en AR.</p>
-    </div>
-  
-    <!-- Resto de tu HTML sigue aquí... -->
-  
+  <!-- Botón de hamburguesa -->
+  <div id="hamburgerButton" style="position: absolute; top: 10px; left: 10px; cursor: pointer; z-index: 2;">
+    <div style="width: 30px; height: 3px; background-color: white; margin: 5px 0;"></div>
+    <div style="width: 30px; height: 3px; background-color: white; margin: 5px 0;"></div>
+    <div style="width: 30px; height: 3px; background-color: white; margin: 5px 0;"></div>
+  </div>
+
+  <!-- Sección de carga para la interacción del usuario -->
+  <div id="uploadSection" style="display: none;">
+    <h2>Carga tu Modelo 3D</h2>
+    <label for="fileInput">Elige un modelo GLTF/GLB:</label>
+    <input type="file" id="fileInput" accept=".gltf,.glb"/>
+    
+    <label for="scaleInput">Establecer escala del modelo (ej. 3.0):</label>
+    <input type="number" id="scaleInput" placeholder="Escala (ej. 3.0)" step="0.1" value="1"/>
+    
+    <button id="uploadButton">Cargar Modelo</button>
+    <p>Después de cargar, apunta tu cámara hacia el marcador 'hiro' para ver tu modelo en AR.</p>
+  </div>
 
   <!-- Configuración de la escena AR -->
   <a-scene id="arScene" embedded arjs style="display: none;">
     <a-marker preset="hiro">
-      <a-entity id="modelEntity" position="0 0 0" scale="1 1 1"></a-entity>
+      <a-entity id="modelEntity" position="0 0 0" scale="1 1 1" gltf-model="url('human_brain/scene.gltf')"></a-entity>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // Obtener referencias a los elementos HTML
       const uploadButton = document.getElementById('uploadButton');
       const fileInput = document.getElementById('fileInput');
       const modelEntity = document.getElementById('modelEntity');
@@ -111,11 +106,13 @@
       const uploadSection = document.getElementById('uploadSection');
       const hamburgerButton = document.getElementById('hamburgerButton');
   
+      // Mostrar la escena AR con el modelo predeterminado
+      arScene.style.display = 'block';
+  
       // Agregar un listener para el botón de carga
       uploadButton.addEventListener('click', () => {
         const file = fileInput.files[0]; // Obtener el archivo seleccionado
         if (file) {
-          // Verificar si es un archivo de modelo válido
           if (!file.name.endsWith('.gltf') && !file.name.endsWith('.glb')) {
             alert('Por favor, carga un archivo GLTF o GLB válido.');
             return;
@@ -126,11 +123,8 @@
           modelEntity.setAttribute('gltf-model', blobUrl);
   
           // Obtener la escala del input y aplicarla al modelo
-          const scaleValue = parseFloat(scaleInput.value) || 1; // La escala predeterminada es 1
+          const scaleValue = parseFloat(scaleInput.value) || 1;
           modelEntity.setAttribute('scale', `${scaleValue} ${scaleValue} ${scaleValue}`);
-  
-          // Mostrar la escena AR una vez que se carga el modelo
-          arScene.style.display = 'block';
         } else {
           alert('Por favor, selecciona primero un archivo GLTF o GLB.');
         }
@@ -140,20 +134,18 @@
       hamburgerButton.addEventListener('click', () => {
         if (uploadSection.style.display === 'none' || uploadSection.style.display === '') {
           uploadSection.style.display = 'block';
-          uploadSection.style.opacity = 0; // Comienza invisible
+          uploadSection.style.opacity = 0;
           setTimeout(() => {
-            uploadSection.style.opacity = 1; // Luego se hace visible
+            uploadSection.style.opacity = 1;
           }, 10);
         } else {
-          uploadSection.style.opacity = 0; // Comienza a desvanecerse
+          uploadSection.style.opacity = 0;
           setTimeout(() => {
-            uploadSection.style.display = 'none'; // Se oculta después de la transición
-          }, 300); // Duración de la transición
+            uploadSection.style.display = 'none';
+          }, 300);
         }
       });
     });
   </script>
-  
-
 </body>
 </html>
