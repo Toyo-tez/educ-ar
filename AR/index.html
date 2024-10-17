@@ -101,14 +101,14 @@
   </a-scene>
 
   <script>
-    document.addEventListener('arjs-video-loaded', (event) => {
-    const canvas = document.querySelector('canvas');
-    if (canvas) {
-      canvas.style.width = '100%';
-      canvas.style.height = '100%';
-    }
-    });
     document.addEventListener('DOMContentLoaded', () => {
+      document.addEventListener('arjs-video-loaded', (event) => {
+      const canvas = document.querySelector('canvas');
+      if (canvas) {
+       canvas.style.width = '100%';
+       canvas.style.height = '100%';
+      }
+      });
       const uploadButton = document.getElementById('uploadButton');
       const fileInput = document.getElementById('fileInput');
       const modelEntity = document.getElementById('modelEntity');
