@@ -93,12 +93,14 @@
   </div>
 
   <!-- Configuración de la escena AR -->
+   <div>
   <a-scene id="arScene"embedded arjs style="display: none;">
     <a-marker preset="hiro">
       <a-entity fov="80" id="modelEntity" position="10 10 -10" scale="1 1 1" gltf-model="url(cerebro.glb)"></a-entity>
     </a-marker>
     <a-entity camera position="0 0 0" look-controls></a-entity>
   </a-scene>
+</div>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {  
