@@ -729,6 +729,11 @@ video {
   border-color: 18, 18, 18, 0.24;
 }
 
+.border-blacknav-25{
+  border-color: #23A4A3; 
+}
+
+
 .bg-teal-600{
   --tw-bg-opacity: 1;
   background-color: rgb(13 148 136 / var(--tw-bg-opacity));
