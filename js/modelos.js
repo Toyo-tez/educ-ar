@@ -267,7 +267,7 @@ function createCardElement(data) {
     "hover:text-teal-600",
     "font-medium",
     "flex",
-    "items-center"
+    "items-center",
   );
   viewButton.addEventListener("click", () => openModal(data));
 
@@ -289,7 +289,6 @@ function createCardElement(data) {
 }
 const modal = document.getElementById("modelModal");
 const modalTitle = document.getElementById("modalTitle");
-const modalContent = document.getElementById("modalContent");
 const closeModal = document.getElementById("closeModal");
 const modelo = document.getElementById("modelo");
 const iframe = document.getElementById("sketchfab_iframe");
