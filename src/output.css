@@ -815,14 +815,8 @@ video {
   border-top-width: 1px;
 }
 
-.border-blacknav-24{
-  border-color: 18, 18, 18, 0.24;
-}
 
-.border-gray-300{
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
-}
+
 
 .border-black{
   --tw-border-opacity: 1;
@@ -1019,11 +1013,7 @@ video {
   text-decoration-line: none;
 }
 
-.shadow-lg{
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
+
 
 .transition-colors{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
