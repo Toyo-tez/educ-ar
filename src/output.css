@@ -13260,6 +13260,17 @@ html {
   padding: 6rem 0;
 }
 
+
+.page-section2 {
+  padding: 2rem 0;
+}
+
+
+.page-section3 {
+  padding: 4rem 0;
+}
+
+
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
@@ -13323,6 +13334,8 @@ html {
   font-size: 1.25rem;
   justify-content: center;
   align-items: center;
+  background-color: #5E5E5E;
+  color:#CCE7EA;
 }
 
 #mainNav {
@@ -13605,3 +13618,35 @@ html {
 }
 
 
+
+.step-number {
+  width: 48px;
+  height: 48px;
+  background-color: #E9D5FF;
+  color: #581C87;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  position: absolute;
+  left: -8px;
+  top: 20%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+}
+
+.step-button {
+  border-radius: 9999px;
+  padding: 0.625rem 1.5rem;
+  color: #1F2937;
+  font-weight: 500;
+  position: relative;
+  margin-left: 0.5rem;
+  font-size: 0.95rem;
+  display: inline-block;
+  text-align: center;
+  
+}

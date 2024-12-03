@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasos Interactivos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+            type="text/css" />
+         
+            <!-- Google Fonts -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <!-- font nunito -->
+         <link
+             href="https://fonts.googleapis.com/css2?family=Courgette&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+             rel="stylesheet">
+         <!-- font courguete -->
+         <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+         <!-- FIN Google Fonts -->
+        
+        
+        
+            <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="src/output.css" rel="stylesheet" />
+        
+    
+    <style>
+
+        .step-number {
+            width: 48px;
+            height: 48px;
+            background-color: #E9D5FF;
+            color: #581C87;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 14px;
+            position: absolute;
+            left: -8px;
+            top: 20%;
+            transform: translateY(-50%);
+            z-index: 10;
+
+        }
+
+        .step-button {
+            border-radius: 9999px;
+            padding: 0.625rem 1.5rem;
+            color: #1F2937;
+            font-weight: 500;
+            position: relative;
+            margin-left: 0.5rem;
+            font-size: 0.95rem;
+            display: inline-block;
+            text-align: center;
+            
+        }
+
+ 
+    </style>
+</head>
+<body class="min-h-screen bg-white p-8">
+    <div class="page-section w-full flex justify-end">
+        <div class="text-right">
+            <p class="text-4xl font-nunito text-black">Acceso a contenidos</p>
+            <p class="text-4xl font-nunito text-black">
+                <span class="font-courgette text-teal-500 text-4xl">interactivos</span> en simples pasos
+            </p>
+        </div>
+    </div>
+
+
+        <div class="space-y-3 pl-4">
+            <!-- Paso 1 -->
+            <div class="flex items-center gap-16 relative step-1 justify-between ">
+                <div class="  bg-[#88D7CD] rounded-full w-fit py-4">
+                    <div class="step-number">1</div>
+                    <div class="step-button text-center text-white text-2xl">Explorá</div>
+                </div>
+                <object type="image/svg+xml"  data="img/Waves.svg" class="svg-object" width="143" height="12"></object>
+
+                <p class="text-black text-sm flex-shrink-0 w-1/2 text-left justify-end">Navegá por nuestra plataforma y descubrí la biblioteca de modelos disponibles.</p>
+            </div>
+
+
+            <!-- Paso 2 -->
+            <div class="flex items-center gap-16 relative step-2 justify-between">
+                <div class=" w-full bg-[#88D7CD] rounded-full py-4 text-center ">
+                    <div class="step-number">2</div>
+                    <div class="step-button text-center text-white text-2xl">Seleccioná</div>
+                </div>
+                <object type="image/svg+xml"  data="img/Waves.svg" class="svg-object" width="143" height="12"></object>
+
+                <p class="text-black text-sm flex-shrink-0 w-1/2">Elegí un modelo o tema que necesitás para tu clase.</p>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="flex items-center gap-16 relative step-3 justify-between">
+                <div class=" w-full bg-[#23A4A3] rounded-full py-4 text-center">
+                    <div class="step-number">3</div>
+                    <div class="step-button text-center text-white text-2xl">Visualizá</div>
+                </div>
+                <object type="image/svg+xml"  data="img/Waves.svg" class="svg-object" width="143" height="12"></object>
+
+                <p class="text-black text-sm flex-shrink-0 w-1/2">Accedé a la vista 3D o AR y explorá cada detalle de forma interactiva.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
