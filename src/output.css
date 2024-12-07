@@ -13271,6 +13271,12 @@ html {
 }
 
 
+.page-section4 {
+  padding: 10rem 0;
+}
+
+
+
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
@@ -13649,4 +13655,38 @@ html {
   display: inline-block;
   text-align: center;
   
+}
+
+
+
+.espiral {
+  width: 208px;
+  height: 208px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  position: absolute;
+  left: 120px;
+  top: 15%;
+  transform: translateY(-75%);
+  z-index: 10;
+
+}
+
+.puntos {
+  width: 128px;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  position: absolute;
+  left: 1020px;
+  top: 15%;
+  transform: translateY(292%);
+  z-index: 10;
+
 }
