@@ -172,8 +172,9 @@ html,
 */
 
 body {
-  margin: 0;
-  /* 1 */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   line-height: inherit;
   /* 2 */
 }
@@ -744,7 +745,7 @@ video {
 }
 
 .border-blacknav-25{
-  border-color: #23A4A3; /* Verde #23A4A3 sin transparencia */
+  border-color: #38b2ac; 
 }
 
 
@@ -13436,7 +13437,6 @@ html {
 
 .masthead {
   padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
 }
 
 .masthead .masthead-heading {
@@ -13514,9 +13514,6 @@ html {
 
 .footer {
   padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #23A4A33F;
-  color: #5E5E5E;
 }
 
 .copyright {
@@ -13623,7 +13620,13 @@ html {
   color: #5E5E5E;
 }
 
+.footer-desc {
+  font-size: 20px;
 
+ margin-bottom: 0%;
+
+
+}
 
 .step-number {
   width: 48px;
@@ -13762,11 +13765,8 @@ html {
 
 
 .fondo {
-  padding-top: 10rem;
-  padding-bottom: 5rem;
-
-  width: 1834px;
-  height: 725px;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
