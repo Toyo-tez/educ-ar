@@ -13690,3 +13690,92 @@ html {
   z-index: 10;
 
 }
+
+.puntos2 {
+  width: 128px;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  position: absolute;
+  left: 1020px;
+  top: 15%;
+  transform: translateY(212%);
+  z-index: 10;
+
+}
+
+
+.espiral2 {
+  width: 208px;
+  height: 208px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  position: absolute;
+  left: 75px;
+  top: 15%;
+  transform: translateY(-75%);
+  z-index: 10;
+
+}
+
+.direccion {
+  width: 208px;
+  height: 208px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  position: absolute;
+  left: 5px;
+  top: 15%;
+  transform: translateY(100%);
+  z-index: 10;
+
+}
+
+
+
+.team {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  position: absolute;
+  right: -45px;
+  top: 5%;
+  transform: translateY(20%);
+  z-index: 10;
+
+}
+
+
+
+
+.fondo {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+
+  width: 1834px;
+  height: 725px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  position: absolute;
+  right: -45px;
+  top: 5%;
+  transform: translateY(-53%);
+  z-index: 10;
+
+}

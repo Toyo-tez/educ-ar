@@ -1,121 +1,217 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasos Interactivos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Escuela de Innovación</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-            type="text/css" />
-         
-            <!-- Google Fonts -->
-         <link rel="preconnect" href="https://fonts.googleapis.com">
-         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-         <!-- font nunito -->
-         <link
-             href="https://fonts.googleapis.com/css2?family=Courgette&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-             rel="stylesheet">
-         <!-- font courguete -->
-         <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-         <!-- FIN Google Fonts -->
-        
-        
-        
-            <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="src/output.css" rel="stylesheet" />
-        
-    
-    <style>
-
-        .step-number {
-            width: 48px;
-            height: 48px;
-            background-color: #E9D5FF;
-            color: #581C87;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 500;
-            font-size: 14px;
-            position: absolute;
-            left: -8px;
-            top: 20%;
-            transform: translateY(-50%);
-            z-index: 10;
-
-        }
-
-        .step-button {
-            border-radius: 9999px;
-            padding: 0.625rem 1.5rem;
-            color: #1F2937;
-            font-weight: 500;
-            position: relative;
-            margin-left: 0.5rem;
-            font-size: 0.95rem;
-            display: inline-block;
-            text-align: center;
-            
-        }
-
- 
-    </style>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet" />
 </head>
-<body class="min-h-screen bg-white p-8">
-    <div class="page-section w-full flex justify-end">
-        <div class="text-right">
-            <p class="text-4xl font-nunito text-black">Acceso a contenidos</p>
-            <p class="text-4xl font-nunito text-black">
-                <span class="font-courgette text-teal-500 text-4xl">interactivos</span> en simples pasos
+
+<body class="font-nunito bg-white text-gray-800">
+    <!-- Header -->
+    <nav class="bg-white fixed top-0 left-0 w-full z-10 shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a class="text-2xl font-bold text-gray-700 no-underline" href="#inicio">Educ-AR</a>
+                
+                <button id="menuToggle" class="lg:hidden text-gray-700 hover:text-gray-900 focus:outline-none" type="button" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div id="navbarResponsive" class="hidden lg:flex lg:items-center">
+                    <ul class="flex flex-col lg:flex-row lg:space-x-4">
+                        <li class="my-2 lg:my-0">
+                            <a class="nav-link text-base lg:text-lg py-2 px-4 rounded-full border-2 border-gray-300 hover:border-teal-500 text-teal-500 hover:bg-teal-50 transition-colors duration-200" 
+                                href="index.html">Inicio</a>
+                        </li>
+                        <li class="my-2 lg:my-0">
+                            <a class="nav-link text-base lg:text-lg py-2 px-4 rounded-full border-2 border-gray-300 text-teal-500 hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200"
+                                href="modelos.html">Asignaturas</a>
+                        </li>
+                        <li class="my-2 lg:my-0">
+                            <a class="nav-link text-base lg:text-lg py-2 px-4 rounded-full border-2 border-gray-300 text-teal-500 hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200"
+                                href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="my-2 lg:my-0">
+                            <a class="nav-link text-base lg:text-lg py-2 px-4 rounded-full border-2 border-gray-300 text-teal-500 hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200" 
+                                href="AR/index.html">Escaner</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-20 px-4 sm:px-6 lg:px-8">
+        <!-- Hero Section -->
+        <section class="text-center py-12 sm:py-16 lg:py-20">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-nunito font-semibold mb-4">
+                Una nueva forma <br class="hidden sm:inline" />de <span class="font-courgette text-teal-500">enseñanza</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-600 mb-8">
+                ¿Qué pasaría si los estudiantes pudieran acceder<br class="hidden sm:inline" />
+                a otra perspectiva de aprendizaje?
             </p>
+            <div class="flex justify-center mb-8 space-x-4">
+                <img src="img/Direction.svg" alt="Direction" class="w-24 h-auto" />
+                <img src="img/Team.svg" alt="Team" class="w-24 h-auto" />
+            </div>
+            <a href="#" class="inline-flex items-center gap-2 bg-teal-600 text-white no-underline text-lg py-3 px-6 rounded-full border-2 border-transparent hover:border-teal-500 transition-colors duration-300">
+                <span>Conocé más</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </a>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-12 sm:py-16 lg:py-20">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-nunito text-center mb-12">
+                Una <span class="font-courgette text-teal-500">dinámica distinta</span> para tus clases
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center text-center">
+                    <img class="w-32 h-32 mb-4" src="img/web.svg" alt="Accesible" />
+                    <p class="text-xl sm:text-2xl">Accesible desde</p>
+                    <p class="text-xl sm:text-2xl">donde estés</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <img class="w-32 h-32 mb-4" src="img/3d model.png" alt="Modelos 3D" />
+                    <p class="text-xl sm:text-2xl">Modelos 3D</p>
+                    <p class="text-xl sm:text-2xl">interactivos</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <img class="w-32 h-32 mb-4" src="img/Contentful.png" alt="Contenidos" />
+                    <p class="text-xl sm:text-2xl">Contenidos</p>
+                    <p class="text-xl sm:text-2xl">multidisciplinarios</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Steps Section -->
+        <section class="py-12 sm:py-16 lg:py-20 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-nunito text-right mb-12">
+                    Acceso a contenidos <span class="font-courgette text-teal-500">interactivos</span> en simples pasos
+                </h2>
+                <div class="space-y-8">
+                    <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+                        <div class="bg-[#A4D9D9] rounded-full w-full md:w-60 py-4 text-center relative">
+                            <div class="absolute -left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-[#E9D5FF] rounded-full flex items-center justify-center text-[#581C87] font-bold">1</div>
+                            <p class="text-white text-xl font-nunito">Explorá</p>
+                        </div>
+                        <img src="img/Waves.svg" alt="Waves" class="w-24 h-auto hidden md:block" />
+                        <p class="text-gray-700 text-center md:text-left font-nunito text-lg md:text-xl lg:text-2xl flex-grow">Navegá por nuestra plataforma y descubrí la biblioteca de modelos disponibles.</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+                        <div class="bg-[#88D7CD] rounded-full w-full md:w-60 py-4 text-center relative">
+                            <div class="absolute -left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-[#E9D5FF] rounded-full flex items-center justify-center text-[#581C87] font-bold">2</div>
+                            <p class="text-white text-xl font-nunito">Seleccioná</p>
+                        </div>
+                        <img src="img/Waves.svg" alt="Waves" class="w-24 h-auto hidden md:block" />
+                        <p class="text-gray-700 text-center md:text-left font-nunito text-lg md:text-xl lg:text-2xl flex-grow">Elegí un modelo o tema que necesitás para tu clase.</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+                        <div class="bg-[#23A4A3] rounded-full w-full md:w-60 py-4 text-center relative">
+                            <div class="absolute -left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-[#E9D5FF] rounded-full flex items-center justify-center text-[#581C87] font-bold">3</div>
+                            <p class="text-white text-xl font-nunito">Visualizá</p>
+                        </div>
+                        <img src="img/Waves.svg" alt="Waves" class="w-24 h-auto hidden md:block" />
+                        <p class="text-gray-700 text-center md:text-left font-nunito text-lg md:text-xl lg:text-2xl flex-grow">Accedé a la vista 3D o AR y explorá cada detalle de forma interactiva.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational Games Section -->
+        <section class="py-12 sm:py-16 lg:py-20 relative overflow-hidden">
+            <img src="img/Spiral 1.svg" alt="Spiral" class="absolute top-0 left-0 w-1/4 max-w-xs" />
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="bg-[#C8E8E8] rounded-3xl p-8 sm:p-12 text-center">
+                    <h2 class="font-nunito text-teal-600 text-2xl sm:text-3xl md:text-4xl lg:text-5xl italic mb-8">
+                        Además, explorá juegos educativos que hacen el aprendizaje más divertido y efectivo.
+                    </h2>
+                    <img src="img/Group.svg" alt="Group" class="w-24 h-auto mx-auto" />
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-12 sm:py-16 lg:py-20 text-center">
+            <h2 class="text-gray-600 text-2xl sm:text-3xl md:text-4xl font-nunito font-bold mb-8">¿Necesitás ayuda para comenzar?</h2>
+            <a href="#" class="inline-flex items-center gap-2 bg-teal-600 text-white no-underline text-lg py-3 px-6 rounded-full border-2 border-transparent hover:border-teal-500 transition-colors duration-300">
+                <span>Guía de inicio</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative bg-transparent py-12">
+        <img src="/img/Vector 2142.svg" alt="Footer background" class="absolute inset-0 w-full h-full object-cover pointer-events-none" />
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <!-- Redes Sociales -->
+                <div>
+                    <h3 class="font-nunito text-2xl font-semibold mb-4 text-gray-700">Redes</h3>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="https://www.facebook.com/secundariainnova" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800">
+                            <span class="sr-only">Facebook</span>
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/secinnovacion" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800">
+                            <span class="sr-only">Twitter</span>
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/secundariadeinnovacion/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800">
+                            <span class="sr-only">Instagram</span>
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Contacto -->
+                <div>
+                    <h3 class="font-nunito text-2xl font-semibold mb-4 text-gray-700">Contacto</h3>
+                    <p class="font-montserrat mb-2">esimbootcamp@gmail.com</p>
+                    <p class="font-montserrat mb-2">Av. Costanera, Posadas, Misiones</p>
+                    <p class="font-montserrat mb-2">+54 3764172744</p>
+                </div>
+                <!-- Educ-AR -->
+                <div>
+                    <h3 class="font-nunito text-2xl font-semibold mb-4 text-gray-700">Educ- AR</h3>
+                    <p class="font-montserrat mb-2">Promoviendo una perspectiva</p>
+                    <p class="font-montserrat mb-2">innovadora para el aprendizaje</p>
+                    <p class="font-montserrat mb-2">de todos.</p>
+                </div>        
+            </div>
         </div>
-    </div>
-
-
-        <div class="space-y-3 pl-4">
-            <!-- Paso 1 -->
-            <div class="flex items-center gap-16 relative step-1 justify-between ">
-                <div class="  bg-[#88D7CD] rounded-full w-fit py-4">
-                    <div class="step-number">1</div>
-                    <div class="step-button text-center text-white text-2xl">Explorá</div>
-                </div>
-                <object type="image/svg+xml"  data="img/Waves.svg" class="svg-object" width="143" height="12"></object>
-
-                <p class="text-black text-sm flex-shrink-0 w-1/2 text-left justify-end">Navegá por nuestra plataforma y descubrí la biblioteca de modelos disponibles.</p>
-            </div>
-
-
-            <!-- Paso 2 -->
-            <div class="flex items-center gap-16 relative step-2 justify-between">
-                <div class=" w-full bg-[#88D7CD] rounded-full py-4 text-center ">
-                    <div class="step-number">2</div>
-                    <div class="step-button text-center text-white text-2xl">Seleccioná</div>
-                </div>
-                <object type="image/svg+xml"  data="img/Waves.svg" class="svg-object" width="143" height="12"></object>
-
-                <p class="text-black text-sm flex-shrink-0 w-1/2">Elegí un modelo o tema que necesitás para tu clase.</p>
-            </div>
-
-            <!-- Paso 3 -->
-            <div class="flex items-center gap-16 relative step-3 justify-between">
-                <div class=" w-full bg-[#23A4A3] rounded-full py-4 text-center">
-                    <div class="step-number">3</div>
-                    <div class="step-button text-center text-white text-2xl">Visualizá</div>
-                </div>
-                <object type="image/svg+xml"  data="img/Waves.svg" class="svg-object" width="143" height="12"></object>
-
-                <p class="text-black text-sm flex-shrink-0 w-1/2">Accedé a la vista 3D o AR y explorá cada detalle de forma interactiva.</p>
+        <!-- Copyright Section -->
+        <div class="mt-8 py-4 bg-[#23A4A3] text-white">
+            <div class="container mx-auto text-center">
+                <small class="font-nunito">Copyright &copy; Silicon Misiones 2024</small>
             </div>
         </div>
-    </div>
+    </footer>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            var navbarResponsive = document.getElementById('navbarResponsive');
+            navbarResponsive.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
