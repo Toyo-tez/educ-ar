@@ -13779,3 +13779,13 @@ html {
   z-index: 10;
 
 }
+
+
+
+.aureola{
+
+  width: 1390;
+  height: 500px;
+  transform: translateY(110%);
+
+}
