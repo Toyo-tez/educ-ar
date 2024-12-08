@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Educ-AR</title>
     <link href="src/output.css" rel="stylesheet" />
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -71,40 +75,43 @@
         </nav>
 
         <div class="mt-8 w-full max-w-6xl">
-          <div class="flex items-center mb-4">
+          <div class="flex items-center mb-4 gap-16">
+            <div class="relative flex items-center">
             <input
               type="text"
-              class="flex-1 px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-teal-500"
-              placeholder="Buscar..."
+              class="flex-initial w-96 pl-12 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-1 focus:ring-teal-300 hover:bg-teal-50"
+              placeholder=""
               id="search-input"
             />
+            <i class="fa-solid fa-magnifying-glass pointer-events-none absolute left-4 text-gray-400 size-6"></i>
+              </div>
             <div
-              class="flex border-t border-r border-b border-gray-300 rounded-r-md"
+              class="flex border-gray-300 rounded-r-md gap-4"
             >
               <button
                 id="filter-biology"
-                class="px-4 py-2 hover:bg-gray-200 filter-btn"
+                class="px-8 py-2  filter-btn border-2 border-gray-300 rounded-full font-semibold hover:border-teal-500 hover:bg-teal-50"
                 data-filter="Biologia"
               >
                 Biología
               </button>
               <button
-                id="fitler-geography"
-                class="px-4 py-2 hover:bg-gray-200 filter-btn"
+                id="filter-geography"
+                class="px-8 py-2  filter-btn border-2 border-gray-300 rounded-full font-semibold hover:border-teal-500 hover:bg-teal-50"
                 data-filter="Geografia"
               >
                 Geografía
               </button>
               <button
                 id="filter-chemistry"
-                class="px-4 py-2 hover:bg-gray-200 filter-btn"
+                class="px-8 py-2  filter-btn border-2 border-gray-300 rounded-full font-semibold hover:border-teal-500 hover:bg-teal-50"
                 data-filter="Quimica"
               >
                 Química
               </button>
               <button
                 id="filter-history"
-                class="px-4 py-2 hover:bg-gray-200 filter-btn"
+                class="px-8 py-2  filter-btn border-2 border-gray-300 rounded-full font-semibold hover:border-teal-500 hover:bg-teal-50"
                 data-filter="Historia"
               >
                 Historia
@@ -127,22 +134,27 @@
           class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 overflow-y-scroll px-4"
         >
           <div
-            class="bg-white rounded-lg shadow-lg w-11/12 md:w-1/2 flex flex-col h-5/6"
+            class="bg-white rounded-lg shadow-lg w-full md:w-1/2 flex flex-col h-3/4"
           >
-            <div class="flex justify-between items-center p-4">
-              <h2 id="modalTitle" class="text-lg font-medium"></h2>
-              <button id="closeModal" class="text-gray-500 hover:text-gray-700">
-                &times;
+            <div class="flex justify-start items-center px-4 pt-6 pb-0 flex-wrap">
+              <button
+                      id="closeModal"
+                      class="flex items-center justify-center w-10 h-10 ml-4 text-white hover:text-gray-700 bg-teal-600 rounded-full"
+              >
+
+                <i class="fa-solid fa-arrow-left"></i>
               </button>
+              <h2 id="modalTitle" class="text-lg font-bold pl-12"></h2>
             </div>
-            <div id="modalContent" class="flex-grow overflow-hidden">
+
+            <div id="modalContent" class="flex-grow overflow-hidden px-4">
               <iframe
                 id="sketchfab_iframe"
                 title="Cuerpo Humano Sistema Oseo (Femenino)"
                 allowfullscreen
                 allow="autoplay; fullscreen; xr-spatial-tracking"
                 src=""
-                class="w-full h-full"
+                class="w-full h-full px-20 rounded-lg"
               ></iframe>
             </div>
             <div class="p-2 flex gap-2">

@@ -238,12 +238,17 @@ const filterButtons = document.querySelectorAll(".filter-btn");
 // Function to create a card element
 function createCardElement(data) {
   const card = document.createElement("div");
-  card.classList.add("bg-white", "rounded-lg", "shadow-lg", "overflow-hidden");
+  card.classList.add(
+    "bg-gray-100",
+    "rounded-3xl",
+    "overflow-hidden",
+    "bg-gray-700",
+  );
 
   const image = document.createElement("img");
   image.src = data.image;
   image.alt = data.title;
-  image.classList.add("w-full", "h-48", "object-cover");
+  image.classList.add("w-full", "h-64", "object-cover");
 
   const content = document.createElement("div");
   content.classList.add("p-4");
