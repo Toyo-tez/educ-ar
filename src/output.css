@@ -13278,6 +13278,8 @@ html {
 
 
 
+
+
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
@@ -13338,11 +13340,11 @@ html {
   display: inline-flex;
   width: 3.25rem;
   height: 3.25rem;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   justify-content: center;
   align-items: center;
   background-color: #5E5E5E;
-  color:#CCE7EA;
+  color:#C8E8E8;
 }
 
 #mainNav {
@@ -13660,8 +13662,6 @@ html {
   
 }
 
-
-
 .espiral {
   width: 208px;
   height: 208px;
@@ -13671,11 +13671,10 @@ html {
   font-weight: 500;
   font-size: 14px;
   position: absolute;
-  left: 120px;
+  left: -520px;
   top: 15%;
-  transform: translateY(-75%);
+  transform: translateY(-25%);
   z-index: 10;
-
 }
 
 .puntos {
@@ -13687,11 +13686,10 @@ html {
   font-weight: 500;
   font-size: 14px;
   position: absolute;
-  left: 1020px;
-  top: 15%;
-  transform: translateY(292%);
+  left: 80%; /* Centrado horizontalmente */
+  bottom: -20px; /* Ajustado para que esté más cerca del contenido */
+  transform: translateY(208%);
   z-index: 10;
-
 }
 
 .puntos2 {
@@ -13703,9 +13701,9 @@ html {
   font-weight: 500;
   font-size: 14px;
   position: absolute;
-  left: 1020px;
-  top: 15%;
-  transform: translateY(212%);
+  left: 80%; /* Centrado horizontalmente */
+  bottom: -20px; /* Ajustado para que esté más cerca del contenido */
+  transform: translateY(140%);
   z-index: 10;
 
 }
@@ -13764,28 +13762,24 @@ html {
 
 
 
-.fondo {
-  width: 100%;
-  height: 100%;
+
+
+
+.aureola{
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 500;
   font-size: 14px;
   position: absolute;
-  right: -45px;
-  top: 5%;
-  transform: translateY(-53%);
+  width: 1390;
+  height: 500px;
+  transform: translateY(165%);
   z-index: 10;
 
 }
 
 
 
-.aureola{
 
-  width: 1390;
-  height: 500px;
-  transform: translateY(110%);
 
-}
