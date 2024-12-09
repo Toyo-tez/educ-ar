@@ -1,74 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Educ-AR</title>
-  <link href="src/output.css" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educ-AR</title>
+    <link href="src/output.css" rel="stylesheet" />
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="flex flex-col items-center bg-white py-8">
+        <nav class="bg-white fixed top-0 left-0 w-full z-10">
+          <div
+            class="container mx-auto flex justify-between items-center px-4 py-3"
+          >
+            <a
+              class="text-2xl font-bold text-customGray no-underline"
+              href="#card-container"
+              >Educ-AR</a
+            >
 
-<header>
-  <div class="flex flex-col items-center bg-white py-8">
-    <nav class="bg-white  fixed top-0 left-0 w-full z-10">
-        <div class="container mx-auto flex justify-between items-center px-4 py-3">
-            <a class="text-2xl font-bold text-customGray no-underline" href="#inicio">Educ-AR</a>
-            
-            <button class="lg:hidden text-white hover:text-gray-300 focus:outline-none" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars ml-2"></i>
+            <button
+              class="lg:hidden text-white hover:text-gray-300 focus:outline-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarResponsive"
+              aria-controls="navbarResponsive"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              Menu
+              <i class="fas fa-bars ml-2"></i>
             </button>
-            
-            <div class="hidden lg:flex lg:items-center w-full lg:w-auto" id="navbarResponsive">
-                <ul class="flex flex-col lg:flex-row lg:space-x-4 lg:ml-auto">
-                    <li class="my-1 lg:my-0">
-                        <a class="nav-link text-lg py-2 px-4 rounded-full border-2 border-blacknav-24 hover:border-teal-500 text-teal-500 hover:bg-teal-50 transition-colors duration-200" 
-                            href="index.html">Inicio</a>
-                    </li>
-                    <li class="my-1 lg:my-0">
-                        <a class="nav-link text-lg py-2 px-4 rounded-full  border-2 border-blacknav-25 text-teal-500 hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200"
-                            href="modelos.html">Asignaturas</a>
-                    </li>
-                    <li class="my-1 lg:my-0">
-                        <a class="nav-link text-lg py-2 px-4 rounded-full border-2 border-blacknav-24 text-teal-500 hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200"
-                            href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="my-1 lg:my-0">
-                        <a class="nav-link text-lg py-2 px-4 rounded-full border-2 border-blacknav-24 text-teal-500 hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200 active" 
-                            href="AR/index.html">Escaner</a>
-                    </li>
-                </ul>
+
+            <div
+              class="hidden lg:flex lg:items-center w-full lg:w-auto"
+              id="navbarResponsive"
+            >
+              <ul class="flex flex-col lg:flex-row lg:space-x-4 lg:ml-auto">
+                <li class="my-1 lg:my-0">
+                  <a
+                    class="nav-link text-lg py-2 px-4 rounded-full border-2 border-blacknav-24 hover:border-teal-500 text-gray-900 hover:bg-teal-50 transition-colors duration-200"
+                    href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="my-1 lg:my-0">
+                  <a
+                    class="nav-link text-lg py-2 px-4 rounded-full border-2 border-gray-900 border-opacity-70 text-gray-900 hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200"
+                    href="modelos.html"
+                    >Modelos</a
+                  >
+                </li>
+                <li class="my-1 lg:my-0">
+                  <a
+                    class="nav-link text-lg py-2 px-4 rounded-full border-2 border-blacknav-24 text-gray-900 hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200"
+                    href="nosotros.html"
+                    >Nosotros</a
+                  >
+                </li>
+                <li class="my-1 lg:my-0">
+                  <a
+                    class="nav-link text-lg py-2 px-4 rounded-full border-2 border-blacknav-24 text-gray-900 hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200 active"
+                    href="AR/index.html"
+                    >Escaner</a
+                  >
+                </li>
+              </ul>
             </div>
+          </div>
+        </nav>
+
+        <div class="mt-8 w-full max-w-6xl">
+          <div class="flex items-center mb-4 gap-16">
+            <div class="relative flex items-center">
+            <input
+              type="text"
+              class="flex-initial w-96 pl-12 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-1 focus:ring-teal-300 hover:bg-teal-50"
+              placeholder=""
+              id="search-input"
+            />
+            <i class="fa-solid fa-magnifying-glass pointer-events-none absolute left-4 text-gray-400 size-6"></i>
+              </div>
+            <div
+              class="flex border-gray-300 rounded-r-md gap-4"
+            >
+              <button
+                id="filter-biology"
+                class="px-8 py-2  filter-btn border-2 border-gray-300 rounded-full font-semibold hover:border-teal-500 hover:bg-teal-50"
+                data-filter="Biologia"
+              >
+                Biología
+              </button>
+              <button
+                id="filter-geography"
+                class="px-8 py-2  filter-btn border-2 border-gray-300 rounded-full font-semibold hover:border-teal-500 hover:bg-teal-50"
+                data-filter="Geografia"
+              >
+                Geografía
+              </button>
+              <button
+                id="filter-chemistry"
+                class="px-8 py-2  filter-btn border-2 border-gray-300 rounded-full font-semibold hover:border-teal-500 hover:bg-teal-50"
+                data-filter="Quimica"
+              >
+                Química
+              </button>
+              <button
+                id="filter-history"
+                class="px-8 py-2  filter-btn border-2 border-gray-300 rounded-full font-semibold hover:border-teal-500 hover:bg-teal-50"
+                data-filter="Historia"
+              >
+                Historia
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="grid md:grid-cols-1 xl:grid-cols-3 gap-8"
+            id="card-container"
+          >
+            <!-- Cards will be dynamically generated here -->
+
+            <!-- Repeat the same structure for the other 5 cards -->
+          </div>
         </div>
-    </nav>
-</header>
 
-<div class="mt-8 w-full max-w-6xl">
-    <div class="flex items-center mb-4">
-      <input type="text" class="flex-1 px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-teal-500" placeholder="Buscar..." id="search-input">
-      <div class="flex border-t border-r border-b border-gray-300 rounded-r-md">
-        <button id="filter-biology" class="px-4 py-2 hover:bg-gray-200 filter-btn" data-filter="Biologia">Biología</button>
-        <button id="fitler-geography"class="px-4 py-2 hover:bg-gray-200 filter-btn" data-filter="Geografia">Geografía</button>
-        <button id="filter-chemistry" class="px-4 py-2 hover:bg-gray-200 filter-btn" data-filter="Quimica">Química</button>
-        <button id="filter-history" class="px-4 py-2 hover:bg-gray-200 filter-btn" data-filter="Historia">Historia</button>
+        <div
+          id="modelModal"
+          class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 overflow-y-scroll px-4"
+        >
+          <div
+            class="bg-white rounded-lg shadow-lg w-full md:w-1/2 flex flex-col h-3/4"
+          >
+            <div class="flex justify-start items-center px-4 pt-6 pb-0 flex-wrap">
+              <button
+                      id="closeModal"
+                      class="flex items-center justify-center w-10 h-10 ml-4 text-white hover:text-gray-700 bg-teal-600 rounded-full"
+              >
+
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <h2 id="modalTitle" class="text-lg font-bold pl-12"></h2>
+            </div>
+
+            <div id="modalContent" class="flex-grow overflow-hidden px-4">
+              <iframe
+                id="sketchfab_iframe"
+                title="Cuerpo Humano Sistema Oseo (Femenino)"
+                allowfullscreen
+                allow="autoplay; fullscreen; xr-spatial-tracking"
+                src=""
+                class="w-full h-full px-20 rounded-lg"
+              ></iframe>
+            </div>
+            <div class="p-2 flex gap-2">
+              <div class="p-4">
+                <button
+                  id="modelo"
+                  class="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600"
+                >
+                  Ver Modelo 3D
+                </button>
+                <button
+                  id="juego"
+                  class="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600"
+                >
+                  Juego/Actividad
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="grid grid-cols-3 gap-8" id="card-container">
-        <!-- Cards will be dynamically generated here -->
-   
-
-      
-
-      <!-- Repeat the same structure for the other 5 cards -->
-    </div>
-  </div>
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
-  <script src="js/modelos.js"></script>
-</body>
+      <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+      <script src="js/modelos.js"></script>
+    </header>
+  </body>
 </html>
