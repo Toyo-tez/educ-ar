@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc677022-3e45-4afe-bbeb-ce2e32915126" name="Changes" comment="SI?">
+    <list default="true" id="bc677022-3e45-4afe-bbeb-ce2e32915126" name="Changes" comment="Faltaba versionar imagenes y vectores">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelos.html" beforeDir="false" afterPath="$PROJECT_DIR$/modelos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nosotros.html" beforeDir="false" afterPath="$PROJECT_DIR$/nosotros.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/output.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +119,8 @@
       <workItem from="1733764574415" duration="58000" />
       <workItem from="1733787712201" duration="2069000" />
       <workItem from="1733789792974" duration="2685000" />
-      <workItem from="1733828043742" duration="1145000" />
+      <workItem from="1733828043742" duration="7195000" />
+      <workItem from="1733835265442" duration="8292000" />
     </task>
     <task id="LOCAL-00001" summary="Añadir embedded de sketchfab, botón de juego/actividad, botón para volver al resto de modelos, mostrar nombre del modelo">
       <option name="closed" value="true" />
@@ -204,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733829007745</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Faltaba versionar imagenes y vectores">
+      <option name="closed" value="true" />
+      <created>1733829385464</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1733829385464</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +276,7 @@
     <MESSAGE value="Acercar el diseño aún más al figma, agregar iconos, intentar solucionar el anuncio que se sobrepone en ciertos minijuegos" />
     <MESSAGE value="Volver al pasado.com" />
     <MESSAGE value="SI?" />
-    <option name="LAST_COMMIT_MESSAGE" value="SI?" />
+    <MESSAGE value="Faltaba versionar imagenes y vectores" />
+    <option name="LAST_COMMIT_MESSAGE" value="Faltaba versionar imagenes y vectores" />
   </component>
 </project>
