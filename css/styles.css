@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 @tailwind base;@tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 :root {
 
@@ -9598,7 +9598,7 @@ textarea.form-control-lg {
   }
   .mb-lg-0 {
     margin-bottom: 0 !important;
-  } 
+  }
   .mb-lg-1 {
     margin-bottom: 0.25rem !important;
   }
@@ -11077,5 +11077,6 @@ html {
 .font-courgette {
   font-family: 'Courgette', cursive;
 }
+
 
 
