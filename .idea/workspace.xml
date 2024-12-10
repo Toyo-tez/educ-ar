@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bc677022-3e45-4afe-bbeb-ce2e32915126" name="Changes" comment="SI?">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Modelos" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Toyo-tez&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Toyo-tez/educ-ar.git&quot;,
+    &quot;accountId&quot;: &quot;33939198-c347-47e7-88a2-cb207a25495e&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;Toyo-tez&quot;,
+    &quot;repository&quot;: &quot;educ-ar&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/js/modelos.js" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2pTj4JnSyOBlGmay3P5IONT0MT0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.modelos.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.17.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.17.9&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/innova3d&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\xampp\\htdocs\\innova3d\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.tailwindcss&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.112" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc677022-3e45-4afe-bbeb-ce2e32915126" name="Changes" comment="" />
+      <created>1732796767564</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732796767564</updated>
+      <workItem from="1732796768723" duration="221000" />
+      <workItem from="1732799924675" duration="90000" />
+      <workItem from="1732802073397" duration="121000" />
+      <workItem from="1732808470494" duration="499000" />
+      <workItem from="1732808983642" duration="125000" />
+      <workItem from="1732809120964" duration="2801000" />
+      <workItem from="1733149885552" duration="1261000" />
+      <workItem from="1733151164342" duration="1063000" />
+      <workItem from="1733152423177" duration="7500000" />
+      <workItem from="1733161731713" duration="1663000" />
+      <workItem from="1733176805572" duration="59000" />
+      <workItem from="1733345092195" duration="325000" />
+      <workItem from="1733581956557" duration="197000" />
+      <workItem from="1733582218896" duration="112000" />
+      <workItem from="1733582343915" duration="44000" />
+      <workItem from="1733582401828" duration="1837000" />
+      <workItem from="1733684837217" duration="7021000" />
+      <workItem from="1733764574415" duration="58000" />
+      <workItem from="1733787712201" duration="2069000" />
+      <workItem from="1733789792974" duration="2685000" />
+      <workItem from="1733828043742" duration="1145000" />
+    </task>
+    <task id="LOCAL-00001" summary="Añadir embedded de sketchfab, botón de juego/actividad, botón para volver al resto de modelos, mostrar nombre del modelo">
+      <option name="closed" value="true" />
+      <created>1732809439762</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732809439762</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Arreglar @imports de fuentes">
+      <option name="closed" value="true" />
+      <created>1732809539567</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732809539567</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Modificar CSS">
+      <option name="closed" value="true" />
+      <created>1732809660478</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732809660478</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Modificar CSS, arreglar cosas sin nada, etc.">
+      <option name="closed" value="true" />
+      <created>1732812155860</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732812155860</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Aplicarle prettier al css, añadir el output de tailwind">
+      <option name="closed" value="true" />
+      <created>1732812616684</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732812616684</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Acercar el diseño aún más al figma, agregar iconos, intentar solucionar el anuncio que se sobrepone en ciertos minijuegos">
+      <option name="closed" value="true" />
+      <created>1733692838565</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733692838565</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Volver al pasado.com">
+      <option name="closed" value="true" />
+      <created>1733788823271</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733788823271</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Volver al pasado.com">
+      <option name="closed" value="true" />
+      <created>1733789022877</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733789022877</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Volver al pasado.com">
+      <option name="closed" value="true" />
+      <created>1733789066151</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1733789066151</updated>
+    </task>
+    <task id="LOCAL-00010" summary="SI?">
+      <option name="closed" value="true" />
+      <created>1733792139160</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1733792139160</updated>
+    </task>
+    <task id="LOCAL-00011" summary="SI?">
+      <option name="closed" value="true" />
+      <created>1733829007745</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1733829007745</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="Modelos" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Añadir embedded de sketchfab, botón de juego/actividad, botón para volver al resto de modelos, mostrar nombre del modelo" />
+    <MESSAGE value="Arreglar @imports de fuentes" />
+    <MESSAGE value="Modificar CSS" />
+    <MESSAGE value="Modificar CSS, arreglar cosas sin nada, etc." />
+    <MESSAGE value="Aplicarle prettier al css, añadir el output de tailwind" />
+    <MESSAGE value="Acercar el diseño aún más al figma, agregar iconos, intentar solucionar el anuncio que se sobrepone en ciertos minijuegos" />
+    <MESSAGE value="Volver al pasado.com" />
+    <MESSAGE value="SI?" />
+    <option name="LAST_COMMIT_MESSAGE" value="SI?" />
+  </component>
+</project>
