@@ -19,11 +19,6 @@
     font-weight: 400;
     font-style: normal;
 }
-
-.filter-btn.active {
-  background-color: #e5e7eb; /* This is the Tailwind gray-200 color */
-  color: #000; /* Optional: adjust text color if needed */
-}
 /*!
 * Start Bootstrap - Freelancer v7.0.7 (https://startbootstrap.com/theme/freelancer)
 * Copyright 2013-2023 Start Bootstrap
@@ -11077,5 +11072,3 @@ html {
 .font-courgette {
   font-family: 'Courgette', cursive;
 }
-
-

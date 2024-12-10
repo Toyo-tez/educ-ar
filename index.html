@@ -9,9 +9,6 @@
     <title>Escuela de Innovación</title>
 
     <!-- Favicon-->
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
     <!-- Font Awesome icons (free version)-->
@@ -41,8 +38,9 @@
    
 </head>
 
-<body id="inicio" class="min-h-screen bg-white w-full m-0 p-0 overflow-x-hidden">  
-    <nav class="bg-white  fixed top-0 left-0 w-full z-50 ">
+<body id="inicio">
+    <!-- Header-->
+    <nav class="bg-white  fixed top-0 left-0 w-full z-10">
         <div class="container mx-auto flex justify-between items-center px-4 py-3">
             <a class="text-2xl font-bold text-customGray no-underline" href="#inicio">Educ-AR</a>
             
@@ -56,19 +54,19 @@
             <div class="hidden lg:flex lg:items-center w-full lg:w-auto" id="navbarResponsive">
                 <ul class="flex flex-col lg:flex-row lg:space-x-4 lg:ml-auto">
                     <li class="my-1 lg:my-0">
-                        <a class="nav-link text-lg py-2 px-4 rounded-full border-2 border-blacknav-25 hover:border-teal-500  hover:bg-teal-50 transition-colors duration-200" 
-                            href="index.html">Inicio</a>
+                        <a class="nav-link text-lg py-2 px-4 rounded-full border-2 border-blacknav-24 hover:border-teal-500 text-teal-500 hover:bg-teal-50 transition-colors duration-200" 
+                            href="#proyecto">Inicio</a>
                     </li>
                     <li class="my-1 lg:my-0">
-                        <a class="nav-link text-lg py-2 px-4 rounded-full  border-2 border-blacknav-24  hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200"
-                            href="modelos.html">Asignaturas</a>
+                        <a class="nav-link text-lg py-2 px-4 rounded-full  border-2 border-blacknav-24 text-teal-500 hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200"
+                            href="#modelos3d">Asignaturas</a>
                     </li>
                     <li class="my-1 lg:my-0">
-                        <a class="nav-link text-lg py-2 px-4 rounded-full border-2 border-blacknav-24  hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200"
-                            href="nosotros.html">Nosotros</a>
+                        <a class="nav-link text-lg py-2 px-4 rounded-full border-2 border-blacknav-24 text-teal-500 hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200"
+                            href="#nosotros">Nosotros</a>
                     </li>
                     <li class="my-1 lg:my-0">
-                        <a class="nav-link text-lg py-2 px-4 rounded-full border-2 border-blacknav-24  hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200 active" 
+                        <a class="nav-link text-lg py-2 px-4 rounded-full border-2 border-blacknav-24 text-teal-500 hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200 active" 
                             href="AR/index.html">Escaner</a>
                     </li>
                 </ul>
@@ -79,216 +77,449 @@
 
     <!-- Esta parte es la muestra de lo del link de sketchfab -->
     <!-- Masthead-->
-    <header class="masthead bg-primary text-white text-center w-full ">
+    <header class="masthead bg-primary text-white text-center">
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Heading-->
             
-            <p class="text-7xl font-nunito text-black font-semibold">
+            <p class="text-5xl font-nunito text-black">
                 Una nueva forma </p>
-                <p class="text-7xl font-nunito text-black font-semibold">de <span class="font-courgette text-teal-500 text-7xl  ">enseñanza</span></p>
+                <p class="text-5xl font-nunito text-black">de <span class="font-courgette text-teal-500 text-5xl italic">enseñanza</span></p>
             </p>
-            <div class="page-section2">            
-                <p class="text-gray-600 font-nunito">¿Qué pasaría si los estudiantes pudieran acceder</p>
-                <p class="text-gray-600 font-nunito">a otra perspectiva de aprendizaje?</p>
-</div>
-<object type="image/svg+xml"  data="img/Direction.svg" class="svg-object direccion" width="143" height="12"></object>
+            <p class="text-gray-600">¿Qué pasaría si los estudiantes pudieran acceder</p>
+                <p class="text-gray-600">a otra perspectiva de aprendizaje?</p>
+            <!-- Masthead Avatar Image-->
 
-<object type="image/svg+xml"  data="img/Team.svg" class="svg-object team" width="143" height="12"></object>
-           
-<div class="page-section2">
     <!-- Botón personalizado -->
-    <a href="#" class="group inline-flex items-center gap-2 bg-teal-600 text-white no-underline text-lg py-3 px-6 rounded-full border-2 border-blacknav-24 hover:border-teal-500 transition-colors duration-300">
-        <span>Conocé más</span>
-        <object type="image/svg+xml"  data="img/Group 427319395.svg" class="svg-object " width="30" height="30"></object>
-    </object>
-      </a>   
+    <a href="#" class="bg-teal-500 text-white no-underline text-lg py-2 px-4 rounded-full border-2 border-blacknav-24 hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200 active">
+        Conocé más
+        <span class="icon bg-white rounded-full px-1.5 py-1">
+            <i class="fas fa-arrow-right text-teal-500"></i> <!-- Ícono de flecha derecha -->
+        </span>
+    </a>
 
-
-</div>
-<div class="page-section2">
+    <div class="page-section">
 
     </div>
-    <div class="page-section w-full text-left mb-0" >
-        <p class="text-5xl font-nunito text-black">Una <span class="font-courgette text-teal-500 text-5xl ">dinámica distinta</span> para</p>
+    <div class="page-section w-full text-left " >
+        <p class="text-5xl font-nunito text-black">Una <span class="font-courgette text-teal-500 text-5xl italic">dinámica distinta</span> para</p>
         <p class="text-5xl font-nunito text-black">tus clases</p>
     </div>
-    <object type="image/svg+xml"  data="img/Aureola.svg" class="svg-object  aureola" ></object>
-
-    <div class="page-section2 flex justify-between grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-10xl">
-
-        <!-- Primer Columna -->
-
-        <div class="flex-col flex justify-center items-center mx-4">
     
-            <img class="page-section" src="img/web.svg" alt="Imagen 1">
-    
-            <p class="text-black text-4xl">Accesible desde</p>
-    
-            <p class="text-black text-4xl">donde estés</p>
-    
-        </div>
-    
-        <!-- Segunda Columna -->
-    
-        <div class="flex-col flex justify-center items-center mx-4">
-    
-            <img class="page-section" src="img/3d model.png" alt="Imagen 2">
-    
-            <p class="text-black text-4xl">Modelos 3D</p>
-    
-            <p class="text-black text-4xl">interactivos</p>
-    
-        </div>
-    
-        <!-- Tercera Columna -->
-    
-        <div class="flex-col flex justify-center items-center mx-4">
-    
-            <img class="page-section" src="img/Contentful.png" alt="Imagen 3">
-    
-            <p class="text-black text-4xl">Contenidos</p>
-    
-            <p class="text-black text-4xl">multidisciplinarios</p>
-    
-        </div>
-    
-    </div>
+        <div class="page-section">
+            
         
-    <div class="page-section3 w-full flex justify-end">
-        <div class="text-right">
-            <p class="text-5xl font-nunito text-black">Acceso a contenidos</p>
-            <p class="text-5xl font-nunito text-black">
-                <span class="font-courgette text-teal-500 text-5xl">interactivos</span> en simples pasos
-            </p>
+        <div class="flex-col">
+            <img class="page-section"src="img/web.svg"></img>
+            <p class=" text-black text-4xl">Accesible desde </p>
+            <p class=" text-black text-4xl"> donde estés</p>
+        </div>
+        <div class="flex-col">
+            <img class="page-section"src="img/web.svg"></img>
+            <p class=" text-black text-4xl">Accesible desde </p>
+            <p class=" text-black text-4xl"> donde estés</p>
         </div>
     </div>
-
-
-        <div class="space-y-3 pl-4">
-            <!-- Paso 1 -->
-            <div class="flex items-center gap-16 relative step-1 justify-between ">
-                <div class=" bg-[#A4D9D9] rounded-full w-60 py-4">
-                    <div class="step-number">1</div>
-                    <div class="step-button text-center text-white text-3xl font-nunito">Explorá</div>
-                </div>
-                <object type="image/svg+xml"  data="img/Waves.svg" class="svg-object" width="143" height="12"></object>
-
-                <p class="text-[#121212] text-center flex-shrink-0 w-1/2 font-nunito text-2xl">Navegá por nuestra plataforma y descubrí la biblioteca de modelos disponibles.</p>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
             </div>
-
-
-            <!-- Paso 2 -->
-            <div class="flex items-center gap-16 relative justify-between">
-                <div class=" w-80 bg-[#88D7CD] rounded-full py-4 text-center ">
-                    <div class="step-number">2</div>
-                    <div class="step-button text-center text-white text-3xl font-nunito">Seleccioná</div>
-                </div>
-                <object type="image/svg+xml"  data="img/Waves.svg" class="svg-object" width="143" height="12"></object>
-
-                <p class="text-[#121212] text-center flex-shrink-0 w-1/2 font-nunito text-2xl">Elegí un modelo o tema que necesitás para tu clase.</p>
-            </div>
-
-            <!-- Paso 3 -->
-            <div class="flex items-center gap-16 relative justify-between">
-                <div class=" w-full bg-[#23A4A3] rounded-full py-4 text-center">
-                    <div class="step-number">3</div>
-                    <div class="step-button text-center text-white text-3xl font-nunito">Visualizá</div>
-                </div>
-                <object type="image/svg+xml"  data="img/Waves.svg" class="svg-object" width="143" height="12"></object>
-
-                <p class="text-[#121212] text-center flex-shrink-0 w-1/2 font-nunito text-2xl">Accedé a la vista 3D o AR y explorá cada detalle de forma interactiva.</p>
-            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">Profesor Carlos Pérez</p>
         </div>
-    </div>    
-
-    <div class="page-section4">
-        <section>
-            <div class="container mx-auto px-6 md:px-12 lg:px-20 relative">
-                <div class="relative mx-auto z-10"></div>
-                <object type="image/svg+xml" data="img/Spiral 1.svg" class="svg-object espiral2" width="143" height="12"></object>
-    
-                <div style="background-color: #C8E8E8; border-radius: 55px; padding: 150px 20px 150px; margin: auto; text-align: right; max-width: 90vw; height: auto;">
-                    <div class="text-right relative">
-                        <div class="page-section2"></div>
-                        <div class="text-center relative">
-                            <p class="font-nunito text-teal-600 text-5xl italic">
-                                Además, explorá juegos educativos que hacen el
-                            </p>
-                            <p class="font-nunito text-teal-600 text-5xl italic">
-                                aprendizaje más divertido y efectivo.
-                            </p>
-                        </div>
-                        <div class="relative mx-auto z-10"></div>
-                        <object type="image/svg+xml" data="img/Group.svg" class="svg-object puntos2" width="143" height="12"></object>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div><div class="page-section">
-
-    <section>
-
-
-        <div class=" text-center text-[#636363] text-4xl font-nunito font-bold">¿Necesitás ayuda para comenzar?</div>
-
-        <div class="page-section"> 
-            <a href="#" class="group inline-flex items-center gap-2 bg-teal-600 text-white no-underline text-lg py-4 px-6 rounded-full border-2 border-blacknav-24 hover:border-teal-500 transition-colors duration-300">
-                <span>Guía de inicio</span>
-                <object type="image/svg+xml"  data="img/Vector.svg" class="svg-object " width="30" height="30"></object>
-            </a>   
-             </div>
-    
-    </section>
-</div>
     </header>
 
 
-<footer class="relative py-0 w-full min-h-[800px] flex flex-col z-10">
-    <div class="absolute inset-0 overflow-hidden z-0">
-        <object type="image/svg+xml" data="/img/Vector 2142.svg" class="w-full h-full object-cover"></object>
-    </div>
-    
-    <!-- Contenido del footer -->
-    <div class="page-section"></div>
-    <div class="container mx-auto px-4 relative z-10 flex-grow flex items-center justify-center">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-10xl">
-            <!-- Redes Sociales -->
-            <div class="col-lg-4 text-center">
-                <p class="font-nunito text-uppercase mb-4 footer-title">Redes</p>
-                <div class="flex justify-center space-x-2">
-                    <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/secundariainnova" target="_blank">
-                        <i class="fab fa-fw fa-facebook-f text-[#C8E8E8]"></i>
-                    </a>
-                    <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/secundariadeinnovacion/?hl=es" target="_blank">
-                        <i class="fab fa-fw fa-instagram text-[C8E8E8]"></i>
-                    </a>
+    <!-- materias Section-->
+    <section class="page-section materias" id="modelos3d">
+        <div class="container">
+            <!-- materias Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">MATERIAS</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- materias Grid Items-->
+            <div class="row justify-content-center">
+                <!-- materias Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="materias-item mx-auto" data-bs-toggle="modal" data-bs-target="#materiasModal1">
+                        <div class="materias-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="materias-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/materias/quimica.png" alt="..." />
+                    </div>
+                </div>
+                <!-- materias Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="materias-item mx-auto" data-bs-toggle="modal" data-bs-target="#materiasModal2">
+                        <div class="materias-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="materias-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/materias/cake.png" alt="..." />
+                    </div>
+                </div>
+                <!-- materias Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="materias-item mx-auto" data-bs-toggle="modal" data-bs-target="#materiasModal3">
+                        <div class="materias-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="materias-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/materias/circus.png" alt="..." />
+                    </div>
+                </div>
+                <!-- materias Item 4-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="materias-item mx-auto" data-bs-toggle="modal" data-bs-target="#materiasModal4">
+                        <div class="materias-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="materias-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/materias/game.png" alt="..." />
+                    </div>
+                </div>
+                <!-- materias Item 5-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                    <div class="materias-item mx-auto" data-bs-toggle="modal" data-bs-target="#materiasModal5">
+                        <div class="materias-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="materias-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/materias/safe.png" alt="..." />
+                    </div>
+                </div>
+                <!-- materias Item 6-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="materias-item mx-auto" data-bs-toggle="modal" data-bs-target="#materiasModal6">
+                        <div class="materias-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="materias-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/materias/submarine.png" alt="..." />
+                    </div>
                 </div>
             </div>
-            
-            <!-- Contacto -->
-            <div class="text-center flex flex-col items-center">
-                <div class="text-left">
-                    <p class="font-nunito footer-title mb-4 text-center">Contacto</p>
-                    <p class="font-montserrat text-gray-700 footer-desc">esimbootcamp@gmai.com</p>
-                    <p class="font-montserrat text-gray-700 footer-desc">Av. Costanera, Posadas, Misiones</p>
-                    <p class="font-montserrat text-gray-700 footer-desc">+54 3764172744</p>
+        </div>
+    </section>
+    <!-- About Section-->
+    <section class="page-section bg-primary text-white mb-0" id="proyecto">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">PROYECTO</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ms-auto">
+                    <p class="lead">Buscamos acercar nuevas formas de enseñanza, facilitando el
+                        aprendizaje, promoviendo la motivación</p>
                 </div>
-            </div>                
-            <!-- Educ-AR -->
-            <div class="text-right">
-                <p class="font-nunito footer-title">Educ-Ar</p>
-                <p class="font-montserrat text-gray-700 footer-desc">Promoviendo una perspectiva</p>
-                <p class="font-montserrat text-gray-700 footer-desc">innovadora para el aprendizaje</p>
-                <p class="font-montserrat text-gray-700 footer-desc">de todos.</p>
-            </div>        
+                <div class="col-lg-4 me-auto">
+                    <p class="lead">y la inserción a una sociedad 4.0 siempre haciendo foco en el uso
+                        responsable de la tecnología.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section-->
+    <section class="page-section" id="nosotros">
+        <div class="container">
+            <!-- Contact Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">¿Quienes somos?</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Contact Section Form-->
+            <div class="row justify-content-center">
+                <p class="lead text-center">Alumnos de la escuela secundaria de Innovación de la provincia de Misiones,
+                    entusiastas
+                    de la tecnología y con grandes ideas para fomentar el uso responsable de los dispositivos
+                    inteligentes.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Redes</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/secundariainnova"
+                        target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://x.com/secinnovacion"
+                        target="_blank"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1"
+                        href="https://www.instagram.com/secundariadeinnovacion/?hl=es" target="_blank"><i
+                            class="fab fa-fw fa-instagram"></i></a>
+                </div>
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                 <h4 class="text-5xl font-nunito text-black">Contacto</h4>
+                 <p class="lead mb-0">
+                    esimbootcamp@gmai.com
+                </p>
+                <p class="text-5xl font-nunito text-black">
+                    Av. Costanera, Posadas, Misiones
+                </p>
+                <p class="lead mb-0">
+                    +54 3764172744
+                </p>
+
+                
+</div>
+
+                
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-5xl font-nunito text-black">Educ- Ar</h4>
+                    <p class="lead mb-0">
+                        Promoviendo una perspectiva innovadora para el aprendizaje</p>
+                    <p class="lead mb-0"> de todos. </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; Silicon Misiones 2024</small></div>
+    </div>
+    <!-- materias Modals-->
+    <!-- materias Modal 1-->
+    <div class="materias-modal modal fade" id="materiasModal1" tabindex="-1" aria-labelledby="materiasModal1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- materias Modal - Title-->
+                                <h2 class="materias-modal-title text-secondary text-uppercase mb-0">QUÍMICA</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- materias Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/materias/quimica.png" alt="..." />
+                                <!-- materias Modal - Text-->
+                                <p class="mb-4">Aquí encontrarás modelos 3D para potenciar el aprendizaje de los
+                                    elementos de la tabla periódica.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-arrow-left fa-fw"></i>
+                                    Volver
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
-    <!-- Copyright Section-->
-    <div class="copyright py-4 bg-[#23A4A3] text-white flex justify-center items-center z-10">
-        <small class="font-nunito footer-text">Copyright &copy; Silicon Misiones 2024</small>
+    <!-- materias Modal 2-->
+    <div class="materias-modal modal fade" id="materiasModal2" tabindex="-1" aria-labelledby="materiasModal2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- materias Modal - Title-->
+                                <h2 class="materias-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- materias Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/materias/cake.png" alt="..." />
+                                <!-- materias Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</footer>    
+    <!-- materias Modal 3-->
+    <div class="materias-modal modal fade" id="materiasModal3" tabindex="-1" aria-labelledby="materiasModal3"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- materias Modal - Title-->
+                                <h2 class="materias-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- materias Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/materias/circus.png" alt="..." />
+                                <!-- materias Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- materias Modal 4-->
+    <div class="materias-modal modal fade" id="materiasModal4" tabindex="-1" aria-labelledby="materiasModal4"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- materias Modal - Title-->
+                                <h2 class="materias-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- materias Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/materias/game.png" alt="..." />
+                                <!-- materias Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- materias Modal 5-->
+    <div class="materias-modal modal fade" id="materiasModal5" tabindex="-1" aria-labelledby="materiasModal5"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- materias Modal - Title-->
+                                <h2 class="materias-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- materias Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/materias/safe.png" alt="..." />
+                                <!-- materias Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- materias Modal 6-->
+    <div class="materias-modal modal fade" id="materiasModal6" tabindex="-1" aria-labelledby="materiasModal6"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- materias Modal - Title-->
+                                <h2 class="materias-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- materias Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/materias/submarine.png" alt="..." />
+                                <!-- materias Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
