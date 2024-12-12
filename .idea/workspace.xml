@@ -4,31 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc677022-3e45-4afe-bbeb-ce2e32915126" name="Changes" comment="Faltaba versionar imagenes y vectores">
+    <list default="true" id="bc677022-3e45-4afe-bbeb-ce2e32915126" name="Changes" comment="Ultimos cambios, arreglar el javascript">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/modelos.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/modelos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modelos.html" beforeDir="false" afterPath="$PROJECT_DIR$/modelos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/async/index.browser.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/async/index.browser.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/async/index.browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/async/index.browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/async/index.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/async/index.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/async/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/async/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/async/index.native.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/async/index.native.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/index.browser.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/index.browser.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/index.browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/index.browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/index.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/index.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/non-secure/index.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/non-secure/index.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/non-secure/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/non-secure/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/url-alphabet/index.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/url-alphabet/index.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/url-alphabet/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/url-alphabet/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nosotros.html" beforeDir="false" afterPath="$PROJECT_DIR$/nosotros.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/nanoid.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/nanoid.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/output.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +124,7 @@
       <workItem from="1733920208166" duration="1184000" />
       <workItem from="1733930485967" duration="6000" />
       <workItem from="1733957964899" duration="87000" />
-      <workItem from="1733958267359" duration="4990000" />
+      <workItem from="1733958267359" duration="6210000" />
     </task>
     <task id="LOCAL-00001" summary="Añadir embedded de sketchfab, botón de juego/actividad, botón para volver al resto de modelos, mostrar nombre del modelo">
       <option name="closed" value="true" />
@@ -240,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733829385464</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Ultimos cambios, arreglar el javascript">
+      <option name="closed" value="true" />
+      <created>1733963319755</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1733963319755</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +289,7 @@
     <MESSAGE value="Volver al pasado.com" />
     <MESSAGE value="SI?" />
     <MESSAGE value="Faltaba versionar imagenes y vectores" />
-    <option name="LAST_COMMIT_MESSAGE" value="Faltaba versionar imagenes y vectores" />
+    <MESSAGE value="Ultimos cambios, arreglar el javascript" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ultimos cambios, arreglar el javascript" />
   </component>
 </project>

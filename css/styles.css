@@ -23,6 +23,58 @@
 .filter-btn.active {
   background-color: #e5e7eb; /* This is the Tailwind gray-200 color */
   color: #000; /* Optional: adjust text color if needed */
+
+  .svg-object {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+  }
+  .direccion, .team {
+    width: 100%;
+    max-width: 143px;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+    .direccion, .team {
+      max-width: 100px;
+    }
+  }
+  @media (max-width: 480px) {
+    .direccion, .team {
+      max-width: 80px;
+    }
+  }
+  .aureola {
+    width: 100%;
+    max-width: 300px;
+  }
+  .espiral2, .puntos2 {
+    width: 100%;
+    max-width: 200px;
+  }
+  @media (max-width: 768px) {
+    .direccion, .team {
+      max-width: 100px;
+    }
+    .aureola {
+      max-width: 200px;
+    }
+    .espiral2, .puntos2 {
+      max-width: 150px;
+    }
+  }
+  @media (max-width: 480px) {
+    .direccion, .team {
+      max-width: 80px;
+    }
+    .aureola {
+      max-width: 150px;
+    }
+    .espiral2, .puntos2 {
+      max-width: 100px;
+    }
+  }
 }
 /*!
 * Start Bootstrap - Freelancer v7.0.7 (https://startbootstrap.com/theme/freelancer)
