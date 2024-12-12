@@ -6,11 +6,29 @@
   <component name="ChangeListManager">
     <list default="true" id="bc677022-3e45-4afe-bbeb-ce2e32915126" name="Changes" comment="Faltaba versionar imagenes y vectores">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/modelos.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/modelos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modelos.html" beforeDir="false" afterPath="$PROJECT_DIR$/modelos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/async/index.browser.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/async/index.browser.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/async/index.browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/async/index.browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/async/index.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/async/index.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/async/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/async/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/async/index.native.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/async/index.native.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/index.browser.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/index.browser.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/index.browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/index.browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/index.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/index.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/non-secure/index.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/non-secure/index.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/non-secure/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/non-secure/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/url-alphabet/index.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/url-alphabet/index.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/url-alphabet/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/url-alphabet/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nosotros.html" beforeDir="false" afterPath="$PROJECT_DIR$/nosotros.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/output.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,26 +82,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.modelos.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.17.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.17.9&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/innova3d&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\xampp\\htdocs\\innova3d\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.tailwindcss&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.modelos.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.nodejs.core.library.configured.version": "20.17.0",
+    "javascript.nodejs.core.library.typings.version": "20.17.9",
+    "last_opened_file_path": "C:/xampp/htdocs/innova3d",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Toyo\\AppData\\Roaming\\npm\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -121,6 +139,10 @@
       <workItem from="1733789792974" duration="2685000" />
       <workItem from="1733828043742" duration="7195000" />
       <workItem from="1733835265442" duration="8292000" />
+      <workItem from="1733920208166" duration="1184000" />
+      <workItem from="1733930485967" duration="6000" />
+      <workItem from="1733957964899" duration="87000" />
+      <workItem from="1733958267359" duration="4990000" />
     </task>
     <task id="LOCAL-00001" summary="Añadir embedded de sketchfab, botón de juego/actividad, botón para volver al resto de modelos, mostrar nombre del modelo">
       <option name="closed" value="true" />

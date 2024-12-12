@@ -1,17 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html", "./*.js"],
+  content: ["./*.html", "./*.js", "./js/**/*.js"],
   theme: {
     extend: {
       colors: {
-        customGray: '#5e5e5e',
+        customGray: "#5e5e5e",
         blacknav: {
-          DEFAULT: '#121212',
-          24: ('18, 18, 18, 0.24')
+          DEFAULT: "#121212",
+          24: "18, 18, 18, 0.24",
+        },
       },
-
     },
+    plugins: [],
   },
-  plugins: [],
-}
-}
+};
