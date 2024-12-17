@@ -11277,7 +11277,7 @@ html {
   position: absolute;
   left: 5px;
   top: 15%;
-  transform: translateY(100%);
+  transform: translateY(150%);
   z-index: 10;
 
 }
@@ -11295,7 +11295,7 @@ html {
   position: absolute;
   right: -45px;
   top: 5%;
-  transform: translateY(20%);
+  transform: translateY(30%);
   z-index: 10;
 
 }
